@@ -1,0 +1,333 @@
+/* Reset CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+@font-face
+{   
+    src: url('../fonts/static/RobotoCondensed-Bold.ttf');
+    font-family: 'RobotoCondensed-Bold';
+}
+@font-face
+{   
+    src: url('../fonts/static/RobotoCondensed-Regular.ttf');
+    font-family: 'RobotoCondensed';
+}
+.header
+{
+    height: 86px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.61);
+    display: block;
+    position: fixed;
+    box-sizing: border-box;
+    z-index: 1;
+    box-shadow: rgb(124, 124, 124) 0px 1px 4px 0px;
+    text-size-adjust: 100%; 
+}
+ .header:before
+{
+    content: "";
+    position: absolute;
+    top: 0; left: 50%;
+    transform: translate(-50%,0); 
+   
+    height: 100%;
+    width: 0;
+    background-color: rgba(255, 255, 255, 0.884);
+    transition-delay: 0s;
+    transition-duration: 2s;
+    transition-property: width;
+    
+}
+.header:hover::before 
+{ 
+    width: 100%;
+} 
+#header-row {
+    padding: 15px 25px 20px;
+    position: relative;
+    align-items: center;
+    font-size: 10px;
+    display: flex;
+    line-height: 17px;
+    justify-content: space-between;
+    font-family: 'RobotoCondensed' ;
+    color: black;
+    
+}
+#header-row #logo {
+    display: block;
+    width: 15%;   
+    height: 42.3125px;
+    background-image: url(../image/logo-yamaha.png.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    unicode-bidi: isolate;
+    margin-left: 10px;
+}
+#header-row #nav 
+{  
+    width: 85%;
+    display: inline-block;
+}
+ul.nav-top-list,
+ul.nav-bot-list  
+{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+#nav-top li
+{
+    display: list-item;
+    list-style-type: none;  
+    text-align: left; 
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#nav-top li a
+{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;  
+    font-size: 14px;
+    padding: auto;
+}
+#nav-bot {margin-top: 15px; display: block;}
+#nav-bot li
+{
+    font-family:'RobotoCondensed-Bold' ;
+    position: relative;
+    display: list-item;
+    list-style-type: none;  
+    text-align: left; 
+    border-left: 2px solid;
+    line-height: 10px;
+    padding: 0 10px;
+    
+}
+.nav-bot-list p 
+{
+    display: inline-block; 
+    position: relative;
+}
+#nav-bot span 
+{
+    position: absolute;
+    bottom: -15px;
+    text-align: center;
+    left: 0; right: 0;
+    font-family: RobotoCondensed;
+    font-size: 11px;
+    
+}
+#nav-bot li a
+{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;  
+    font-size: 17px;
+    padding: 0 10px ;
+}
+
+.new-me-discover { position: relative; } 
+#nav-bot .sub-nav
+ {  
+     display: flex; 
+    position: fixed;
+    width: 954px;
+    height: auto;
+    padding-top: 20px;
+    overflow: hidden;
+    z-index: 1;
+ }
+ @keyframes fadeup-center {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+ .new-me-discover:hover .sub-nav ul {
+    display: flex;  
+    animation: fadeup-center .9s 0s forwards;   
+}
+
+ /* .sub-nav li :hover ul {display: flex; z-index: 1; } */
+ .sub-nav ul
+ {
+    position: relative;
+    display: none;
+    height: 455px; width: 100%;
+    text-align: left;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+    transition: transform 1s;
+ }
+
+ #nav-bot .sub-nav li
+{ 
+    border-left: 0px solid;
+}
+.sub-nav li#left
+{
+    box-shadow: rgb(193, 185, 185) 0px 1px 4px 0px;;
+    height: auto;
+    width: 25.448%;
+    display: list-item;
+    margin: 10px;
+}
+.sub-nav-item 
+{
+     width: auto;
+     height: auto; 
+     position: relative;
+     display: inline-block;    
+    }
+ #left .sub-nav-item 
+ {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 10px;
+ }  
+.sub-nav-item>p
+{
+ 
+    top: 15px;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    line-height: 10px;
+    
+    font-size: 18px;
+    text-align: center;
+}
+
+.sub-nav-item img
+{
+    
+    display: inline-block;
+    width: 100%; height: 100%;
+    max-width: 240px;
+    margin-left: auto; margin-right: auto;
+    margin-top: 20%;
+    background-size: cover; /* Hoặc cover */
+    background-position: center; /* Căn chỉnh hình ảnh vào giữa */
+    background-repeat: no-repeat;
+    
+}
+.sub-nav li#right
+{
+    width: 74.225%;
+    display: list-item;
+    box-shadow: rgb(211, 204, 204) 0px 1px 4px 0px;;
+    margin: 10px;
+}
+
+#right .sub-nav-item-row
+{
+     display: grid; 
+     /*  display: grid;  
+     hiển thị đối tượng dạng lưới phù hợp 
+     để thiết kế web phức tạp  */                
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 10px;
+}
+.slider
+{
+    height: 541px;
+    width: 1365px;
+    
+    position: relative;
+}
+.footer
+{
+    height: 424.469px;
+      background-color: rgba(0, 0, 0, 0.678);  
+    color: white;
+    font-family:  'RobotoCondensed';
+}
+
+.footer-height
+{
+    position: relative;  
+    height: 136.797px;
+    padding: 15px 25px; 
+    display: flex;
+    
+}
+.footer-left
+{
+    position: absolute;
+    
+}
+.social-list
+{
+    display: flex;
+    list-style-type: none;
+    
+}
+
+.social-list>li
+{
+    width: 25%;
+}
+.footer-navigation-list
+{
+    position: absolute;
+    display: flex;
+    right: 10%;
+}
+.footer-navigation-list>li
+{
+    padding: 0 20px;
+    border-color: white;
+    border-left: 2px solid;
+    list-style-type: none;
+    line-height: 10px;
+}
+li#first {border-left: 0;}
+.footer-navigation-list>li>a
+{
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+.footer-navigation-list>li>a:hover {color: rgb(215, 212, 212);} 
+
+.footer-infor
+{
+    height: 244.578px;
+    display: flex;
+}
+.in4-left
+{
+    margin-left: 50px;
+}
+.in4-left p {margin-top: 10px;}
+.in4-right {text-align: center;}
+.in4-right ul
+{
+    display: flex;
+    list-style-type: none;    
+}
+.in4-right li
+{
+    align-items: center;
+    line-height: 60px;
+    width: 291.625px;
+    height: 60px;
+    background-color: rgb(53, 49, 49);
+    margin: 15px;
+}
+.in4-right li img {width: 20px; height: 20px;}
+.in4-right li:hover {background-color: rgba(0, 0, 0, 0.678);}
+.copyright {text-align: center;}
