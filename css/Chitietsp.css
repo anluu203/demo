@@ -39,7 +39,8 @@
     background-color: rgba(255, 255, 255, 0.884);
     transition-delay: 0s;
     transition-duration: 2s;
-    transition-property: width;  
+    transition-property: width;
+    
 }
 .header:hover::before 
 { 
@@ -132,7 +133,7 @@ ul.nav-bot-list
     padding: 0 10px ;
 }
 
-.new-me-discover { position: relative; } 
+.new-me-discover { position: relative;} 
 #nav-bot .sub-nav
  {  
      display: flex; 
@@ -241,10 +242,7 @@ ul.nav-bot-list
     grid-gap: 10px;
 }
 
-
-
-                
-                /* ĐÂY LÀ OVERLAY */               
+    /* BODY */
 .overlay
 {
     height: auto;
@@ -253,137 +251,98 @@ ul.nav-bot-list
     position: relative;
     font-family: 'RobotoCondensed' ;
     background-image: url('../image/sanpham-bg-img.webp');
-}
+}    
 .overlay-product
 {
-    height: 4168px;
+    height: 1300px;
     background-color: white;
     box-shadow: rgb(124, 124, 124) 0px 1px 4px 0px;
     padding: 35px 40px 25px;
-    margin: 0 0 125px;
     margin: 0 268px;
 }
+.overlay-product h1 { text-align: center;}
+.information-product
+{
+    margin-top: 20px;
+    display: flex;
+}
+.information-product img
+{
+    margin-right: 15px;
+    height: 200px;
+    width: 250px;
+    background-color: rgba(247, 241, 241, 0.61); 
+    border-radius: 20px 20px 20px 20px; 
+}
+.information-product .image 
+{ 
+    position: relative; 
+    display: inline-block;   
+}
+
+
 .overlay-product p.sub-tittle
 {
+    margin-left: 15px;
     font-size: 18px;
     text-align: justify;
     line-height: 30.6px;
 }
-.product-xega
-{
-    height: max-content;
-    margin-top: 70px;
-    background-color: rgba(255, 225, 230, 0.78);     
-    box-shadow: rgb(99, 99, 99) 2px;
-}
-.product-xeso
-{
-    height: max-content;
-    margin-top: 70px;
-    background-color: rgba(160, 178, 232, 0.787);     
-    box-shadow: grey 1px;
-}
-.product-sport
-{
-    height: max-content;
-    margin-top: 70px;
-    background-color: rgba(75, 73, 140, 0.803);     
-    box-shadow: grey 1px;
-}
-.product-xega h2,
-.product-xeso h2,
-.product-sport h2
-{
-    text-align: center;
-    font-size: 34px;
-    line-height: 83px;
-}
-.product-xega>ul,
-.product-xeso>ul
-{
-    height: max-content;
+b
+{ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     margin-left: 10px; font-size: 25px;}
+ .selection-color
+ {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 228px 228px;
-    grid-gap: 20px 20px 0;
-    padding: 0 25px;
+    grid-template-columns: 25% 25% 25%;
+    grid-gap: 15px;
+    margin-top: 20px;
+ }
+ .selection-color li    
+{
+    list-style-type: none;
+    height: 30px;   
+    border-radius: 20px;
+    box-shadow: rgb(122, 120, 120) 0px 1px 4px 0px;
+}
+.selection-color #color1 { background: linear-gradient(to right, black 50%, rgb(187, 39, 39) 50%);}
+.selection-color #color2 { background: linear-gradient(to right, black 50%, rgb(233, 226, 226) 50%);}
+.selection-color #color3 { background-color: black;}
+
+.overlay-product h2
+{
+    margin: 50px 0px;
     text-align: center;
-}
-.product-sport>ul
-{
-    height: max-content;
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 228px 228px 228px;
-    grid-gap: 20px 20px 0;
-    padding: 0 25px;
-    text-align: center;
-}
-.product-xega>ul>li,
-.product-xeso>ul>li,
-.product-sport>ul>li
-{
-    position: relative;
-    list-style-type: none;  
-    display: inline-block;   
-    overflow: hidden;
-   
-}
-.product-xega>ul>li:hover a.infor{
-    bottom: 23px;
-}
-.product-xeso>ul>li:hover a.infor{
-    bottom: 23px;
-}
-.product-sport>ul>li:hover a.infor{
-    bottom: 23px;
-}
-#Grande,#Freego,#Latte,#EXCITER,#JUPITERFI,
-#JUPITERFINN,#PG1,#SIRIUS,#SIRIUSFI,
-#MT03,#MT07,#MT09,#MT15,#R03,#R15,#TRACER9,#XS155R 
-{margin-right: 20.75px;}
-.product-xega>ul>li img,
-.product-xeso>ul>li img,
-.product-sport>ul>li>img
-{
-    
-    display: block;
-    width: 100%;
-    height: 90%;
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.591);
-    border-top-right-radius: 20px;
-    object-fit: cover;
-   
-}
-.product-xega a.infor,
-.product-xeso a.infor,
-.product-sport a.infor
-{
-    transition: 1.5s;
-    text-decoration: none;
-    text-align: center;
-    background-color: #446084;    
-    color: white;
-    font-size: 20px;
-    display: block;
-    padding: 5px 0px;
-    position: absolute;
-    width: 100%;
-    bottom: -35px;
-}
-.product-xega p,
-.product-xeso p,
-.product-sport p  
-{ 
-    position: absolute;
-    display:inline-block;  
-    font-family:'RobotoCondensed-Bold' ; 
-    font-size: 15px;
-    right: 0; left: 0;
     
 }
-            /* ĐÂY LÀ FOOTER */
+.similor-product ul
+{
+    
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-gap: 10px;
+}
+.similor-product li
+{
+    border-radius: 20px;
+    background-color:rgb(247, 241, 241) ;
+    list-style-type: none;
+    height: auto;
+    width: auto;
+}
+.similor-product img
+{
+    height: 200px;
+    width: 250px;
+}
+.slider img
+{
+    width: 749px;
+    height: 440px;
+    margin-top: 50px ;
+}
+
+
 .footer
 {
     height: 424.469px;
@@ -464,56 +423,7 @@ li#first {border-left: 0;}
     background-color: rgb(53, 49, 49);
     margin: 15px;
 }
+.in4-right li b { font-family:'RobotoCondensed'; font-size: 16px;}
 .in4-right li img {width: 20px; height: 20px;}
-.in4-right li:hover {background-color: rgba(0, 0, 0, 0.678);}
+.in4-right li:hover {background-color: rgba(0, 0, 0, 0.678);} 
 .copyright {text-align: center;}
-
-.selected-product
-{
-    width: 100%;
-    height: 63px;
-    padding-top: 30px;
-}
-.selected-product ul
-{
-    display: flex;
-}
-.selected-product li
-{
-    width: 33%;
-    padding: 10px 0 ;
-    list-style-type: none;
-    text-align: center;
-    border: 2px solid;
-    border-radius: 25px;
-    border-color: rgb(11, 45, 130);
-    margin: 0px 10px;
-    transition: 2s;
-}
-.selected-product li a
-{
-    text-decoration: none;
-    line-height: 28px;
-    text-transform: uppercase;
-    color: rgb(11, 45, 130);
-    font-weight: 600;
-}
-.selected-product li::before
-{
-    content: "";
-    position: absolute;
-    top: 0; left: 50%;
-    transform: translate(-50%,0); 
-    height: 100%;
-    width: 0;
-    background-color: rgba(255, 255, 255, 0.884);
-    transition-delay: 0s;
-    transition-duration: 2s;
-    transition-property: width;
-}
-.selected-product li:hover
-{
-    width: 50%;
-    background-color:rgb(11, 45, 130); 
-}
-.selected-product li:hover a {color: white;}
